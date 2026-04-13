@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puffcast | Weather Prep With Personality</title>
+    <meta name="description" content="Puffcast is a weather app with a cloud mascot that tells you what to wear. Practical outfit guidance for your day, work, and workouts.">
+    <meta property="og:title" content="Puffcast">
+    <meta property="og:description" content="Your cloud buddy that tells you what to wear.">
+    <meta property="og:image" content="./assets/og-image.png">
+    <link rel="icon" type="image/png" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="logo">
+                    <img src="assets/icon.png" alt="Puffcast Logo" width="64" height="64">
+                    <h1>Puffcast</h1>
+                </div>
+                <p class="hero-kicker">Weather Prep With Personality</p>
+                <p class="tagline">Open once, prep fast, get on with your day.</p>
+                <p class="sub-tagline">Nimbus the cloud mascot checks the weather so you don't have to guess what to wear. Practical outfit guidance for daily life, work, and workouts.</p>
+            </div>
+
+            <div class="hero-visual-row">
+                <!-- Group 1: Main screen, Hourly strip, Outfit detail -->
+                <div class="phone-frame visible" data-slot="left" data-group="0">
+                    <img src="screenshots/2.png" alt="Puffcast - Hourly weather at a glance" decoding="async" width="640" height="1386">
+                </div>
+                <div class="phone-frame visible" data-slot="center" data-group="0">
+                    <img src="screenshots/1.png" alt="Puffcast - What to wear today" decoding="async" width="640" height="1386">
+                </div>
+                <div class="phone-frame visible" data-slot="right" data-group="0">
+                    <img src="screenshots/3.png" alt="Puffcast - Outfit recommendations" decoding="async" width="640" height="1386">
+                </div>
+                <!-- Group 2: Modes, Customization, Widget -->
+                <div class="phone-frame" data-slot="left" data-group="1">
+                    <img src="screenshots/4.png" alt="Puffcast - Switch between modes" loading="lazy" decoding="async" width="640" height="1386">
+                </div>
+                <div class="phone-frame" data-slot="center" data-group="1">
+                    <img src="screenshots/5.png" alt="Puffcast - Customize your preferences" loading="lazy" decoding="async" width="640" height="1386">
+                </div>
+                <div class="phone-frame" data-slot="right" data-group="1">
+                    <img src="screenshots/6.png" alt="Puffcast - Home screen widget" loading="lazy" decoding="async" width="640" height="1386">
+                </div>
+            </div>
+
+            <div class="carousel-captions" id="carousel-captions">
+                <div class="carousel-captions-row visible" data-group="0">
+                    <span>Hourly weather at a glance</span>
+                    <span>What to wear today</span>
+                    <span>Outfit recommendations</span>
+                </div>
+                <div class="carousel-captions-row" data-group="1">
+                    <span>Daily, work, and workout modes</span>
+                    <span>Customize your preferences</span>
+                    <span>Home screen widget</span>
+                </div>
+            </div>
+            <p class="carousel-caption-mobile" id="carousel-caption-mobile">What to wear today</p>
+
+            <div class="carousel-dots">
+                <button class="carousel-dot active" data-group="0" aria-label="Show screenshots 1-3"></button>
+                <button class="carousel-dot" data-group="1" aria-label="Show screenshots 4-6"></button>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary disabled">
+                    <svg viewBox="0 0 384 512" width="20" height="20" fill="currentColor" style="margin-right: 8px; margin-bottom: -2px;">
+                        <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-11.4 69.5-34.3z"/>
+                    </svg>
+                    Coming Soon to App Store
+                </a>
+                <a href="#" class="btn btn-secondary disabled">
+                    <svg viewBox="0 0 576 512" width="20" height="20" fill="currentColor" style="margin-right: 8px; margin-bottom: -2px;">
+                        <path d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-9.94l-48.35,84a302.3,302.3,0,0,0-246.94,0l-48.35-84a10,10,0,1,0-17.27,9.94l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"/>
+                    </svg>
+                    Coming Soon to Google Play
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <!-- How it works -->
+    <section class="workflow-section">
+        <div class="container">
+            <div class="section-intro">
+                <p class="section-kicker">How It Works</p>
+                <h2 class="section-title">Check, pick, prep, go</h2>
+                <p class="section-subtitle">One glance at Nimbus tells you what the weather means for your outfit. Three taps and you're ready.</p>
+            </div>
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="workflow-number">1</div>
+                    <h3>Check</h3>
+                    <p>See current and next-hours weather with Nimbus showing the vibe at a glance.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-number">2</div>
+                    <h3>Pick mode</h3>
+                    <p>Switch between daily, work, or workout to get guidance tuned to what you're doing.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-number">3</div>
+                    <h3>Prep</h3>
+                    <p>Get outfit layers, accessories, and extras with a clear rationale for each suggestion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Features -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-intro">
+                <p class="section-kicker">Features</p>
+                <h2 class="section-title">Weather that actually helps you get dressed</h2>
+            </div>
+
+            <div class="features">
+                <div class="feature-card" data-glow="teal">
+                    <div class="feature-icon" style="background-color: rgba(103, 195, 211, 0.15); color: #67c3d3;">&#9729;</div>
+                    <h2>Mascot-driven weather</h2>
+                    <p>Nimbus reacts to real conditions with outfit changes, weather effects, and scene backgrounds so you feel the forecast instantly.</p>
+                </div>
+                <div class="feature-card" data-glow="gold">
+                    <div class="feature-icon" style="background-color: rgba(246, 195, 31, 0.15); color: #f6c31f;">&#9733;</div>
+                    <h2>Outfit guidance</h2>
+                    <p>Layer suggestions, accessories, and extras based on temperature, wind, rain chance, and UV. Practical, not generic.</p>
+                </div>
+                <div class="feature-card" data-glow="purple">
+                    <div class="feature-icon" style="background-color: rgba(139, 92, 246, 0.15); color: #8b5cf6;">&#9881;</div>
+                    <h2>Mode-based profiles</h2>
+                    <p>Daily, work, and workout modes each have their own sensitivity and outfit logic so your commute and your run get different advice.</p>
+                </div>
+                <div class="feature-card" data-glow="green">
+                    <div class="feature-icon" style="background-color: rgba(16, 185, 129, 0.15); color: #10b981;">&#9202;</div>
+                    <h2>Hourly forecast</h2>
+                    <p>Swipe through hours and days to see how conditions change. Outfit guidance updates to match each time period.</p>
+                </div>
+                <div class="feature-card" data-glow="blue">
+                    <div class="feature-icon" style="background-color: rgba(56, 189, 248, 0.15); color: #38bdf8;">&#9728;</div>
+                    <h2>Widget-ready</h2>
+                    <p>Home screen widget shows prep text and mascot state for a quick glance without opening the app.</p>
+                </div>
+                <div class="feature-card" data-glow="pink">
+                    <div class="feature-icon" style="background-color: rgba(236, 72, 153, 0.15); color: #ec4899;">&#9962;</div>
+                    <h2>Multiple locations</h2>
+                    <p>Use current GPS by default, then save and switch between places from the bottom sheet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <span class="dot">&middot;</span>
+                <a href="terms.html">Terms of Service</a>
+                <span class="dot">&middot;</span>
+                <a href="support.html">Support</a>
+                <span class="dot">&middot;</span>
+                <a href="changelog.html">Changelog</a>
+            </p>
+            <p class="footer-copyright">&copy; 2026 Puffcast. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const frames = document.querySelectorAll('.phone-frame');
+            const dots = document.querySelectorAll('.carousel-dot');
+            const captionRows = document.querySelectorAll('.carousel-captions-row');
+            const mobileCaption = document.getElementById('carousel-caption-mobile');
+            const isMobile = window.matchMedia('(max-width: 900px)');
+
+            const MOBILE_CAPTIONS = [
+                'Hourly weather at a glance',
+                'What to wear today',
+                'Outfit recommendations',
+                'Daily, work, and workout modes',
+                'Customize your preferences',
+                'Home screen widget'
+            ];
+
+            let currentGroup = 0;
+            let currentMobileIndex = 0;
+            let timer = null;
+
+            function updateDesktopCaptions(group) {
+                captionRows.forEach(row => {
+                    row.classList.toggle('visible', parseInt(row.dataset.group) === group);
+                });
+            }
+
+            function updateMobileCaption(index) {
+                if (!mobileCaption) return;
+                mobileCaption.style.opacity = '0';
+                setTimeout(() => {
+                    mobileCaption.textContent = MOBILE_CAPTIONS[index] || '';
+                    mobileCaption.style.opacity = '1';
+                }, 300);
+            }
+
+            function showGroup(group) {
+                frames.forEach(f => {
+                    f.classList.toggle('visible', parseInt(f.dataset.group) === group);
+                });
+                dots.forEach(d => {
+                    d.classList.toggle('active', parseInt(d.dataset.group) === group);
+                });
+                currentGroup = group;
+                updateDesktopCaptions(group);
+            }
+
+            function showMobileSlide(index) {
+                frames.forEach((f, i) => {
+                    f.classList.toggle('visible', i === index);
+                });
+                const dotGroup = index < 3 ? 0 : 1;
+                dots.forEach(d => {
+                    d.classList.toggle('active', parseInt(d.dataset.group) === dotGroup);
+                });
+                updateMobileCaption(index);
+                currentMobileIndex = index;
+            }
+
+            function startDesktopCarousel() {
+                clearInterval(timer);
+                showGroup(currentGroup);
+                timer = setInterval(() => {
+                    showGroup((currentGroup + 1) % 2);
+                }, 8000);
+            }
+
+            function startMobileCarousel() {
+                clearInterval(timer);
+                showMobileSlide(currentMobileIndex);
+                timer = setInterval(() => {
+                    showMobileSlide((currentMobileIndex + 1) % frames.length);
+                }, 6000);
+            }
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const group = parseInt(dot.dataset.group);
+                    if (isMobile.matches) {
+                        showMobileSlide(group * 3);
+                        clearInterval(timer);
+                        timer = setInterval(() => {
+                            showMobileSlide((currentMobileIndex + 1) % frames.length);
+                        }, 6000);
+                    } else {
+                        showGroup(group);
+                        clearInterval(timer);
+                        timer = setInterval(() => {
+                            showGroup((currentGroup + 1) % 2);
+                        }, 8000);
+                    }
+                });
+            });
+
+            function initCarousel() {
+                if (isMobile.matches) {
+                    startMobileCarousel();
+                } else {
+                    startDesktopCarousel();
+                }
+            }
+
+            isMobile.addEventListener('change', initCarousel);
+            initCarousel();
+        });
+    </script>
+</body>
+</html>
